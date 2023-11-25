@@ -10,8 +10,8 @@ table {
 table,
 th,
 td {
-  border: 1px solid #ddd;
-  /* color: white; */
+  border: 1px solid wheat;
+  color: white;
 }
 th,
 td {
@@ -20,7 +20,8 @@ td {
   color: blue;
 }
 th {
-  background-color: #f2f2f2;
+  background-color: darkred;
+  border: 10px solid darkgoldenrod;
 }
 img {
   max-width: 50px;
@@ -32,13 +33,39 @@ img {
 }
 
 #name {
-  color: white;
+  color: black;
 }
 
 #phone {
-  color: white;
+  color: black;
 }
 
 #image {
-  color: white;
+  color: black;
+}
+
+#name1 {
+  color: wheat;
+}
+
+#phone1 {
+  color: wheat;
+}
+
+#img {
+  color: wheat;
+}
+
+#button {
+  color: darkblue;
+  background-color: darkred;
+  border: 7px solid darkgoldenrod;
+  border-radius: 50%;
+  width: 120px;
+  height: 45px;
+}
+
+#contactTable {
+  color: black;
+  background-color: white;
 }

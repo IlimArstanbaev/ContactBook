@@ -5,7 +5,6 @@ function addContact() {
   let name = document.getElementById("name").value;
   let phone = document.getElementById("phone").value;
   let image = document.getElementById("image").value;
-
   let newRow = contactTable.insertRow(-1);
   let cell1 = newRow.insertCell(0);
   let cell2 = newRow.insertCell(1);
@@ -18,11 +17,11 @@ function addContact() {
   cell4.innerHTML = `<button onclick="deleteContact(this)">Delete</button>
                        <button onclick="editContact(this)">Edit</button>`;
 
-  contactForm.reset();
+  contactForm.reset(); // Clear the form after adding a contact
 }
 
 function deleteContact(button) {
-  const row = button.parentNode.parentNode;
+  let row = button.parentNode.parentNode;
   row.parentNode.removeChild(row);
 }
 
@@ -40,3 +39,16 @@ function editContact(button) {
 
   row.parentNode.removeChild(row);
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  async function fetchContacts() {
+    let response = await fetch("http://localhost:3000/contacts");
+
+    let contacts = await response.json();
+
+    contacts.forEach((contact) => {
+      console.log(contact);
+    });
+  }
+  fetchContacts();
+});

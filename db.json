@@ -1,0 +1,16 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Thomas DeLonge",
+      "phone": "123-456-7890",
+      "image": "https://guitar.com/wp-content/uploads/2023/07/Tom-Delonge@2000x1500.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Will Smith",
+      "phone": "987-654-3210",
+      "image": "https://m.media-amazon.com/images/M/MV5BNTczMzk1MjU1MV5BMl5BanBnXkFtZTcwNDk2MzAyMg@@._V1_FMjpg_UX1000_.jpg"
+    }
+  ]
+}

@@ -6,20 +6,21 @@
     <title>Contact Book</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
     <h1 id="book">Contact Book</h1>
 
     <form id="contactForm">
-      <label for="name">Name:</label>
+      <label id="name1" for="name">Name:</label>
       <input type="text" id="name" required />
       <br />
-      <label for="phone">Phone:</label>
+      <label id="phone1" for="phone">Phone:</label>
       <input type="tel" id="phone" required />
       <br />
-      <label for="image">Image URL:</label>
+      <label id="img" for="image">Image URL:</label>
       <input type="url" id="image" />
       <br />
-      <button type="button" onclick="addContact()">Add Contact</button>
+      <button id="button" onclick="addContact()">Add Contact</button>
     </form>
 
     <table id="contactTable">
@@ -31,9 +32,7 @@
           <th>Action</th>
         </tr>
       </thead>
-      <tbody>
-        <!-- Contact rows will be inserted here -->
-      </tbody>
+      <tbody></tbody>
     </table>
     <script src="./js/main.js"></script>
   </body>
