@@ -1,0 +1,44 @@
+body {
+  background-image: url(https://i.gifer.com/76YS.gif);
+  font-family: Arial, sans-serif;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  /* color: white; */
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  color: blue;
+}
+th {
+  background-color: #f2f2f2;
+}
+img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+#book {
+  color: white;
+}
+
+#name {
+  color: white;
+}
+
+#phone {
+  color: white;
+}
+
+#image {
+  color: white;
+}
