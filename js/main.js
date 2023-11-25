@@ -17,7 +17,7 @@ function addContact() {
   cell4.innerHTML = `<button onclick="deleteContact(this)">Delete</button>
                        <button onclick="editContact(this)">Edit</button>`;
 
-  contactForm.reset(); // Clear the form after adding a contact
+  contactForm.reset();
 }
 
 function deleteContact(button) {
