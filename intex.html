@@ -8,32 +8,35 @@
   </head>
 
   <body>
-    <h1 id="book">Contact Book</h1>
+    <h1>Contact Book</h1>
 
-    <form id="contactForm">
-      <label id="name1" for="name">Name:</label>
-      <input type="text" id="name" required />
-      <br />
-      <label id="phone1" for="phone">Phone:</label>
-      <input type="tel" id="phone" required />
-      <br />
-      <label id="img" for="image">Image URL:</label>
-      <input type="url" id="image" />
-      <br />
-      <button id="button" onclick="addContact()">Add Contact</button>
-    </form>
+    <div id="addContactForm">
+      <h2>Add new contact</h2>
 
-    <table id="contactTable">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Phone</th>
-          <th>Image</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+      <label for="name">Name:</label>
+      <input type="text" id="name" />
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" />
+      <label for="image">Image URL:</label>
+      <input type="" id="image" />
+      <button id="btn" onclick="addContact()">Add Contact</button>
+    </div>
+
+    <div id="editContainer" style="display: none">
+      <label for="editName">//////////</label>
+      <input type="text" id="editName" />
+      <br />
+      <label for="editPhone">//////////</label>
+      <input type="text" id="editPhone" />
+      <br />
+      <label for="editImage">//////////</label>
+      <input type="text" id="editImage" />
+      <br />
+      <button id="btnEdit" onclick="saveEditedContact()">Save Changes</button>
+    </div>
+
+    <ul id="contactList"></ul>
+
     <script src="./js/main.js"></script>
   </body>
 </html>
